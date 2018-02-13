@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: BUG-EMAIL-ADDR <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: yyyy-mm-dd hh:mm+0000\n"
+"PO-Revision-Date: 2015-03-24 12:30+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 1.7.4\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sr_RS\n"
+
+#: myoptions.php:10
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Nemate dovoljno ovlašćenja da pristupite ovoj stranici."
+
+#: myoptions.php:21
+msgid ""
+"Thanks for using PHP Everywhere. If you have any questions, feel free to ask "
+"<a href=\"mailto:alexandria96gmx.de\">me</a>.<br />I created this plugin "
+"because I have not found a Wordpress PHP plugin which is simple to use and "
+"provides a good user experience while being able to use PHP or HTML in "
+"Posts, Pages or Widgets."
+msgstr ""
+"Hvala što koristite PHP. Ako imate bilo kakva pitanja, slobodno mi pišite na "
+"<a href=\"mailto:alexandria96gmx.de\">me</a>.<br /> Kreirao sam ovaj plugin "
+"jer nisam našao Wordpress PHP plugin koji je jednostavan za upotrebu i pruža "
+"dobro korisničko iskustvo omogućavajući vam da koristite PHP ili HTML u "
+"postovima, na stranicama ili Widget-ima."
+
+#: myoptions.php:22
+msgid "User role management"
+msgstr "Upravljanje korisničkom ulogom"
+
+#: myoptions.php:23
+msgid "Who can modify the PHP in posts and pages?"
+msgstr "Ko može da menja PHP u postovima i na stranicama?"
+
+#: myoptions.php:26
+msgid "Administrator, editor, author"
+msgstr "Administrator, urednik, autor"
+
+#: myoptions.php:27
+msgid "Administrator only"
+msgstr "Samo administrator"
+
+#: myoptions.php:31
+msgid "Usage"
+msgstr "Upotreba"
+
+#: myoptions.php:32
+msgid "Widgets"
+msgstr "Widget-i"
+
+#: myoptions.php:33
+msgid ""
+"Simply activate the <pre>PHP + HTML</pre> Widget. in your sidebar and paste "
+"your PHP code including the PHP Tags like this:\n"
+"<pre>&lt;?php  echo(\"Hello, World!\"); ?&gt;</pre>\n"
+"You code may contain HTML Elements or have multiple lines."
+msgstr ""
+"Jednostavno aktivirajte <pre>PHP + HTML</pre> Widget na traci bočnog menija "
+"i nalepite svoj PHP kod, uključujući PHP oznake, kao što je ova: \n"
+"<pre>&lt;?php echo(\"Hello, World!\"); ?&gt;</pre>\n"
+". Vaš kod može da sadrži HTML elemente ili višestruke redove"
+
+#: myoptions.php:36
+msgid "Posts & Pages"
+msgstr "Postovi i stranice"
+
+#: myoptions.php:37
+msgid ""
+"Edit or create a new post or page and simply put your PHP Code including the "
+"PHP Tags into the side options_box, which is labeled \"PHP Everywhere\". "
+"Then put the <pre>[php_everywhere]</pre> shortcode where you want the code "
+"to appear. Your code may contain multiple lines or HTML Tags."
+msgstr ""
+"Uredite ili kreirajte novi post ili stranicu i jednostavno ubacite svoj PHP "
+"kod, uključujući PHP oznake u bočni okvir sa opcijama, označen kao \"PHP "
+"Everywhere\". Zatim unesite <pre>[php_everywhere]</pre> shortcode tamo gde "
+"želite da se pojavi kod. Vaš kod može da sadrži HTML elemente ili višestruke "
+"redove."
+
+#: myoptions.php:38
+msgid "Multiple PHP instances"
+msgstr "Višestruki PHP primeri"
+
+#: myoptions.php:39
+msgid ""
+"If you want to use multiple PHP instances use the shortcode with the "
+"instance parameter like this:"
+msgstr ""
+"Ako želite da koristite višestruke PHP primere, koristite shortcode sa "
+"parametrom primera kao što je ovaj:"
+
+#: myoptions.php:39
+msgid "Your PHP snippet should look like this:"
+msgstr "Vaš PHP isečak treba da izgleda ovako:"
+
+#: myoptions.php:49
+msgid "Changelog"
+msgstr "Dnevnik izmena"
+
+#: myoptions.php:50
+msgid ""
+"Go to <a href=\"http://www.alexander-fuchs.net/php-everywhere/\" target="
+"\"_blank\">http://www.alexander-fuchs.net/php-everywhere/</a> to view the "
+"changelog and more."
+msgstr ""
+"Idite na <a href=\"http://www.alexander-fuchs.net/php-everywhere/\" target="
+"\"_blank\">http://www.alexander-fuchs.net/php-everywhere/</a> da biste "
+"videli dnevnik izmena i još mnogo toga."
+
+#: myoptions.php:51
+msgid "Like this Plugin? Support me :)"
+msgstr "Da li vam se sviđa ovaj plugin? Podržite me :)"
+
+#: myoptions.php:52
+msgid "Follow me"
+msgstr "Pratite me"
+
+#: myoptions.php:59
+msgid "Subscribe"
+msgstr "Pretplatite se"
+
+#: myoptions.php:60
+msgid ""
+"Please visit <a href=\"http://www.alexander-fuchs.net\" target=\"_blank"
+"\">http://www.alexander-fuchs.net</a> to subscribe to my newsletter."
+msgstr ""
+"Posetite <a href=\"http://www.alexander-fuchs.net\" target=\"_blank\">http://"
+"www.alexander-fuchs.net</a> da biste se pretplatili na moje novosti"
+
+#: myoptions.php:61
+msgid "Donate"
+msgstr "Donirajte"
+
+#: options_box.php:13
+msgid "Just put [php_everywhere] where you want the code to be executed."
+msgstr "Samo unesite [php_everywhere] tamo gde želite da se kod izvrši."
+
+#: widget.php:6
+msgid "Enables the execution of PHP and HTML"
+msgstr "Omogućava izvršenje PHP-a i HTML-a."

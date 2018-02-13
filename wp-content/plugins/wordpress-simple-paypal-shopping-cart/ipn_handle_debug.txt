@@ -1,0 +1,68 @@
+[01/09/2018 12:44 PM] - SUCCESS :Paypal Class Initiated by 173.0.82.126
+[01/09/2018 12:44 PM] - SUCCESS :Post string : mc_gross=21.20&protection_eligibility=Eligible&item_number1=&payer_id=XZ8CG8KV37AS6&payment_date=04%3A43%3A58+Jan+09%2C+2018+PST&payment_status=Completed&charset=windows-1252&mc_shipping=0.00&first_name=test&mc_fee=0.97&notify_version=3.8&custom=wp_cart_id%253D8153%2526ip%253D95.140.10.222&payer_status=verified&business=yourweb-facilitator%40mywebsociety.com&num_cart_items=1&verify_sign=AKaD63F-gAIMBgY2fYTLl7tOxSrDAsgJTWqeLaMmYTMnSRVbopDIsbvA&payer_email=yourweb-buyer%40mywebsociety.com&txn_id=3N667133L29645711&payment_type=instant&last_name=buyer&item_name1=3D+Lemmings&receiver_email=yourweb-facilitator%40mywebsociety.com&payment_fee=&quantity1=1&receiver_id=LEGNCEEQWBV9A&txn_type=cart&mc_gross_1=21.20&mc_currency=EUR&residence_country=FR&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=84b6d71b79ef2&
+[01/09/2018 12:44 PM] - SUCCESS :Checking if PayPal IPN response is valid
+[01/09/2018 12:44 PM] - SUCCESS :Connecting to: https://www.sandbox.paypal.com/cgi-bin/webscr
+[01/09/2018 12:44 PM] - SUCCESS :IPN successfully verified.
+[01/09/2018 12:44 PM] - SUCCESS :Creating product Information to send.
+[01/09/2018 12:44 PM] - SUCCESS :Custom field value in the IPN: wp_cart_id=8153&ip=95.140.10.222
+[01/09/2018 12:44 PM] - SUCCESS :Payment Status: Completed
+[01/09/2018 12:44 PM] - SUCCESS :Transaction Type: Shopping Cart
+[01/09/2018 12:44 PM] - SUCCESS :Number of Cart Items: 1
+[01/09/2018 12:44 PM] - SUCCESS :Item Number: 
+[01/09/2018 12:44 PM] - SUCCESS :Item Name: 3D Lemmings
+[01/09/2018 12:44 PM] - SUCCESS :Item Quantity: 1
+[01/09/2018 12:44 PM] - SUCCESS :Item Total: 21.20
+[01/09/2018 12:44 PM] - SUCCESS :Item Currency: EUR
+[01/09/2018 12:44 PM] - SUCCESS :Custom values
+[01/09/2018 12:44 PM] - SUCCESS :
+Array
+(
+    [wp_cart_id] => 8153
+    [ip] => 95.140.10.222
+)
+[01/09/2018 12:44 PM] - SUCCESS :Order post id: 8153
+[01/09/2018 12:44 PM] - SUCCESS :Seller Paypal Email Address is Valid: yourweb-facilitator@mywebsociety.com
+[01/09/2018 12:44 PM] - SUCCESS :Checking price. Original price: 21.2. Paid price: 21.2
+[01/09/2018 12:44 PM] - SUCCESS :Applying filter - wspsc_buyer_notification_email_body
+[01/09/2018 12:44 PM] - SUCCESS :Product Email successfully sent to yourweb-buyer@mywebsociety.com
+[01/09/2018 12:44 PM] - SUCCESS :Applying filter - wspsc_seller_notification_email_body
+[01/09/2018 12:44 PM] - SUCCESS :Updating Affiliate Database Table with Sales Data if Using the WP Affiliate Platform Plugin.
+[01/09/2018 12:44 PM] - SUCCESS :Not Using the WP Affiliate Platform Plugin.
+[01/09/2018 12:44 PM] - SUCCESS :Paypal class finished.
+
+------------------------------------------------------------------
+
+[01/09/2018 12:50 PM] - SUCCESS :Paypal Class Initiated by 173.0.82.126
+[01/09/2018 12:50 PM] - SUCCESS :Post string : mc_gross=21.20&protection_eligibility=Eligible&item_number1=&payer_id=XZ8CG8KV37AS6&payment_date=04%3A50%3A48+Jan+09%2C+2018+PST&payment_status=Completed&charset=windows-1252&mc_shipping=0.00&first_name=test&mc_fee=0.97&notify_version=3.8&custom=wp_cart_id%253D8156%2526ip%253D95.140.10.222&payer_status=verified&business=yourweb-facilitator%40mywebsociety.com&num_cart_items=1&verify_sign=AiS5Cksed0F3o2HDVub1DjPd188aApoBZzpBRXABuxz9mxTKHxNk0QYW&payer_email=yourweb-buyer%40mywebsociety.com&txn_id=5LX18902YN7274928&payment_type=instant&last_name=buyer&item_name1=3D+Lemmings&receiver_email=yourweb-facilitator%40mywebsociety.com&payment_fee=&quantity1=1&receiver_id=LEGNCEEQWBV9A&txn_type=cart&mc_gross_1=21.20&mc_currency=EUR&residence_country=FR&test_ipn=1&transaction_subject=&payment_gross=&ipn_track_id=fed2c5409f27b&
+[01/09/2018 12:50 PM] - SUCCESS :Checking if PayPal IPN response is valid
+[01/09/2018 12:50 PM] - SUCCESS :Connecting to: https://www.sandbox.paypal.com/cgi-bin/webscr
+[01/09/2018 12:51 PM] - SUCCESS :IPN successfully verified.
+[01/09/2018 12:51 PM] - SUCCESS :Creating product Information to send.
+[01/09/2018 12:51 PM] - SUCCESS :Custom field value in the IPN: wp_cart_id=8156&ip=95.140.10.222
+[01/09/2018 12:51 PM] - SUCCESS :Payment Status: Completed
+[01/09/2018 12:51 PM] - SUCCESS :Transaction Type: Shopping Cart
+[01/09/2018 12:51 PM] - SUCCESS :Number of Cart Items: 1
+[01/09/2018 12:51 PM] - SUCCESS :Item Number: 
+[01/09/2018 12:51 PM] - SUCCESS :Item Name: 3D Lemmings
+[01/09/2018 12:51 PM] - SUCCESS :Item Quantity: 1
+[01/09/2018 12:51 PM] - SUCCESS :Item Total: 21.20
+[01/09/2018 12:51 PM] - SUCCESS :Item Currency: EUR
+[01/09/2018 12:51 PM] - SUCCESS :Custom values
+[01/09/2018 12:51 PM] - SUCCESS :
+Array
+(
+    [wp_cart_id] => 8156
+    [ip] => 95.140.10.222
+)
+[01/09/2018 12:51 PM] - SUCCESS :Order post id: 8156
+[01/09/2018 12:51 PM] - SUCCESS :Seller Paypal Email Address is Valid: yourweb-facilitator@mywebsociety.com
+[01/09/2018 12:51 PM] - SUCCESS :Checking price. Original price: 21.2. Paid price: 21.2
+[01/09/2018 12:51 PM] - SUCCESS :Applying filter - wspsc_buyer_notification_email_body
+[01/09/2018 12:51 PM] - SUCCESS :Product Email successfully sent to yourweb-buyer@mywebsociety.com
+[01/09/2018 12:51 PM] - SUCCESS :Applying filter - wspsc_seller_notification_email_body
+[01/09/2018 12:51 PM] - SUCCESS :Updating Affiliate Database Table with Sales Data if Using the WP Affiliate Platform Plugin.
+[01/09/2018 12:51 PM] - SUCCESS :Not Using the WP Affiliate Platform Plugin.
+[01/09/2018 12:51 PM] - SUCCESS :Paypal class finished.
+
+------------------------------------------------------------------
+
