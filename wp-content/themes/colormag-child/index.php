@@ -23,7 +23,7 @@
 
 <div id="primary">
 	<p>
-		Say Hello !
+		Say Hello ! Try Github to Wordpress PUSH
 	</p>
 </div>
 
