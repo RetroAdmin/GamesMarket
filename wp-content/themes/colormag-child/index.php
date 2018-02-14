@@ -16,24 +16,7 @@
 	?>
 
 <style media="screen">
-	.formGM input{
-		margin:0;
-	}
-	.formGM > .row{
-		position:relative;
-		padding-left:115px;
-		margin-bottom: 20px;
-	}
-	.formGM > .row label{
-		position: absolute;
-		left:0;
-		top:50%;
-		transform:translateY(-50%);
-	}
-	.formGM .submit{
-		margin:0 auto;
-		width:114px;
-	}
+	
 </style>
 
 
