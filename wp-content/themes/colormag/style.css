@@ -1814,7 +1814,7 @@ a#scroll-up:hover {
 
 .no-sidebar #secondary,
 .no-sidebar-full-width #secondary {
-	display: none;
+	display: inline-block;
 }
 
 .widget_featured_posts .article-content .above-entry-meta .cat-links a {

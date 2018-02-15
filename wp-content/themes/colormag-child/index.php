@@ -22,6 +22,17 @@
 	.owl-stage-outer{
 		border-radius: 10% / 50%;
 	}
+	#secondary{
+		position: relative;
+		float: left;
+		top: -430px;
+	}
+	@media only screen and (max-width: 768px){
+		#secondary{
+			position: relative;
+			margin-top: 430px;
+		}
+	}
 </style>
 
 
