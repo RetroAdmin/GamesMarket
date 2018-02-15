@@ -16,15 +16,21 @@
 	?>
 
 <style media="screen">
-	
+	#primary{
+		margin-right: 0!important;
+	}
+	.owl-stage-outer{
+		border-radius: 10% / 50%;
+	}
 </style>
 
 
-
 <div id="primary">
-	<div id="content" class="clearfix">
-		
-	</div>
+<section>
+		<?php
+			echo do_shortcode('[slide-anything id="9372"]');
+		?>
+</section>
 </div>
 
 <?php get_sidebar(); ?>
