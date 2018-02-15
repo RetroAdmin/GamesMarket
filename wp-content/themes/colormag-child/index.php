@@ -22,9 +22,9 @@
 
 
 <div id="primary">
-	<p>
-		Say Hello ! Try Github to Wordpress PUSH
-	</p>
+	<div id="content" class="clearfix">
+		
+	</div>
 </div>
 
 <?php get_sidebar(); ?>
