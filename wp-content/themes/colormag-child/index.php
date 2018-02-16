@@ -33,6 +33,26 @@
 			margin-top: 430px;
 		}
 	}
+	.widget-title{
+	font-family: 'Orbitron', sans-serif;
+	border-radius: 4px;
+	box-shadow: 0px 0px 6px #289dcc;
+background: #fff;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	text-align: center;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	font-size:7px;
+	width: 200px;
+	padding:1px;
+	color:white;
+	background-color: #38a7bb;
+	margin-top:0px;
+}
+#media_image-17{
+	margin-top: 10px;
+}
 </style>
 
 

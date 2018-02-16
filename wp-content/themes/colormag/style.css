@@ -385,7 +385,7 @@ input[type="submit"],
 button {
 	margin-bottom: 30px;
 	padding: 10px 20px;
-	background-color: #289dcc;
+	background-color: #FFFFFF;
 	border: 0px;
 	transition: background-color 0.3s linear 0s;
 	-webkit-border-radius: 3px;
@@ -397,7 +397,7 @@ button {
 	appearance: none !important;
 	cursor: pointer;
 	display: inline-block;
-	color: #FFFFFF;
+	color: #000000;
 }
 
 #search-form input[type="submit"] {
@@ -1578,9 +1578,10 @@ li.default-menu {
 
 #secondary .widget-title {
 	border-bottom: 2px solid #289dcc;
-	font-size: 18px;
+	font-size: 20px;
 	margin-bottom: 15px;
 	padding-bottom: 0;
+	width:95%
 }
 
 #secondary .widget-title span {
