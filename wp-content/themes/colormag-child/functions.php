@@ -40,21 +40,21 @@ add_action( 'wp_enqueue_scripts', 'add_scripts' );
 function my_search() {
     $term = strtolower( $_GET['term'] );
     $suggestions = array();
-    
+
     $loop = new WP_Query( 's=' . $term );
-    
+
     while( $loop->have_posts() ) {
       $loop->the_post();
       $suggestion = array();
       $suggestion['label'] = get_the_title();
       $suggestion['link'] = get_permalink();
-      
+
       $suggestions[] = $suggestion;
     }
-    
+
     wp_reset_query();
-      
-      
+
+
       $response = json_encode( $suggestions );
       echo $response;
       exit();
@@ -65,9 +65,9 @@ add_action( 'wp_ajax_my_search', 'my_search' );
 add_action( 'wp_ajax_nopriv_my_search', 'my_search' );
 
      function paypal_func($posted) {
- 
+
            // Parse data from IPN $posted array
- 
+
            $mc_gross = isset($posted['mc_gross']) ? $posted['mc_gross'] : '';
            $invoice = isset($posted['invoice']) ? $posted['invoice'] : '';
            $protection_eligibility = isset($posted['protection_eligibility']) ? $posted['protection_eligibility'] : '';
@@ -113,7 +113,7 @@ add_action( 'wp_ajax_nopriv_my_search', 'my_search' );
            $ipn_track_id = isset($posted['ipn_track_id']) ? $posted['ipn_track_id'] : '';
            $IPN_status = isset($posted['IPN_status']) ? $posted['IPN_status'] : '';
            $cart_items = isset($posted['cart_items']) ? $posted['cart_items'] : '';
- 
+
          /**
          * At this point you can use the data to generate email notifications,
          * update your local database, hit 3rd party web services, or anything
@@ -121,3 +121,18 @@ add_action( 'wp_ajax_nopriv_my_search', 'my_search' );
          */
      }
      add_action('paypal_ipn_for_wordpress_ipn_response_handler', 'paypal_func', 10, 1);
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************/
+/*                      AJOUT DES FONCTIONS                      */
+/*****************************************************************/
+  require_once(get_template_directory().'-child/assets/functions/user.php');  // Gestion inscription / connexion
+  require_once(get_template_directory().'-child/assets/functions/menus.php'); // Gestion des menus supplémentaires
