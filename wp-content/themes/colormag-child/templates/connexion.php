@@ -37,7 +37,7 @@
 							$errorPasswordWrong = true;
 			      }
 			      else {
-						  wp_redirect('/');
+						  wp_redirect('/mon-compte');
 			      }
 				}
 

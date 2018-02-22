@@ -3,6 +3,11 @@
 	Template Name: Compte - Accueil
 	*/
 
+  // Verif user
+    if(!is_user_logged_in()){
+      wp_redirect('/connexion');
+    }
+
   // Init
     get_header();
   	global $current_user;
