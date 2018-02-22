@@ -187,7 +187,7 @@
             </tr>
             <tr>
               <td>Pays</td>
-              <td><?php echo $countries_array[get_user_meta($current_user->ID,'shipping_country')[0]]; ?></td>
+              <td><?php if(!empty(get_user_meta($current_user->ID,'shipping_country')[0])) echo $countries_array[get_user_meta($current_user->ID,'shipping_country')[0]]; ?></td>
             </tr>
           </tbody>
         </table>
@@ -238,7 +238,7 @@
             </tr>
             <tr>
               <td>Pays</td>
-              <td><?php echo $countries_array[get_user_meta($current_user->ID,'billing_country')[0]]; ?></td>
+              <td><?php if(!empty(get_user_meta($current_user->ID,'shipping_country')[0])) echo $countries_array[get_user_meta($current_user->ID,'billing_country')[0]]; ?></td>
             </tr>
           </tbody>
         </table>
