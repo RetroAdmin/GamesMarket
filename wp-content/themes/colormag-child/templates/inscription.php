@@ -2,30 +2,77 @@
 	/*
 	Template Name: Inscription
 	*/
-	get_header();
 
-	if(isset($_POST['submit']) && !empty($_POST['submit'])){
 
-		// Affichage Data
-			echo 'Pseudo : '.$_POST['pseudo'].'<br>';
-			echo 'Mail : '.$_POST['email'].'<br>';
-			echo 'Mot de passe : '.$_POST['password'].'<br>';
-			echo 'Confirmation : '.$_POST['confirmation'].'<br>';
-			echo '<hr>';
+/*************************************************************************************/
+/* 												  	ENVOIE FORMULAIRE INSCRIPTION 												*/
+/*************************************************************************************/
 
-		// Check password confirmation
-			if($_POST['password'] == $_POST['confirmation']) echo 'Mots de passe identiques<hr>';
-			else echo 'Mots de passe non identiques !<hr>';
+		if(isset($_POST['submit']) && !empty($_POST['submit'])){
+			// Init Var ----------------------------------------------------------------------------------------------
+				$nbErreur = 0;
 
-		// Check username
-			if(get_user_by('login', $_POST['pseudo'])) echo 'Pseudo déja utilisé !<br>';
-			else echo 'Pseudo disponible.<br>';
-		// Check Email
-			if(get_user_by('email', $_POST['email'])) echo 'Email déja utilisé !<hr>';
-			else echo 'Email disponible.<hr>';
+			// Check password ----------------------------------------------------------------------------------------
+				if(!isset($_POST['password']) || empty($_POST['password'])){
+					$nbErreur ++;
+					$errorPasswordEmpty = true;
+				}
+				if(!isset($_POST['confirmation']) || empty($_POST['confirmation'])){
+					$nbErreur ++;
+					$errorConfirmationEmpty = true;
+				}
+				if(!isset($errorPasswordEmpty) && !isset($errorConfirmationEmpty)){
+					if($_POST['password'] != $_POST['confirmation']){
+						$nbErreur ++;
+						$errorConfirmation = true;
+					}
+				}
 
-	}
+			// Check username ----------------------------------------------------------------------------------------
+				if(!isset($_POST['pseudo']) || empty($_POST['pseudo'])){
+					$nbErreur ++;
+					$errorPseudoEmpty = true;
+				}
+				else if(get_user_by('login', $_POST['pseudo'])){
+					$nbErreur ++;
+					$errorPseudoUsed = true;
+				}
 
+			// Check Email --------------------------------------------------------------------------------------------
+				if(!isset($_POST['email']) || empty($_POST['email'])){
+					$nbErreur ++;
+					$errorEmailEmpty = true;
+				}
+				else{
+					if(get_user_by('email', $_POST['email'])){
+						$nbErreur ++;
+						$errorEmailUsed = true;
+					}
+					else if(!is_email($_POST['email'])){
+						$nbErreur ++;
+						$errorEmailInvalid = true;
+					}
+				}
+
+			// Si aucune erreur trouvée --------------------------------------------------------------------------------
+				if($nbErreur == 0){
+					// Creation du compte
+	       		wp_create_user( $_POST['pseudo'], $_POST['password'], $_POST['email']);
+					// Connexion
+						$creds = array(
+							'user_login'    => $_POST['email'],
+							'user_password' => $_POST['password'],
+							'remember'      => true
+						);
+		        $user = wp_signon( $creds, false );
+					  wp_redirect('/');
+	        	// if(is_wp_error($user)) echo json_encode($user->get_error_message());
+				}
+
+		}
+
+
+		get_header();
 
 ?>
 <style media="screen">
@@ -47,6 +94,16 @@
 		margin:0 auto;
 		width:114px;
 	}
+	.formGM .error{
+		font-size: 12px;
+		color: #f30000;
+		display:block;
+	}
+	.formGM a.connexion{
+		display: block;
+    font-size: 11px;
+    margin: 8px 0 0 3px;
+	}
 </style>
 
 
@@ -62,21 +119,30 @@
 			<form action="#" method="post" class="formGM" id="formInscription">
 				<div class="row">
 					<label for="">E-mail</label>
-					<input type="email" name="email" class="email" value="" required>
+					<input type="email" name="email" class="email" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>" required>
+					<?php if(isset($errorEmailEmpty) && $errorEmailEmpty==true) echo '<span class="error">Veuillez saisir un pseudo.</span>'; ?>
+					<?php if(isset($errorEmailInvalid) && $errorEmailInvalid==true) echo '<span class="error">Veuillez saisir un email valide.</span>'; ?>
+					<?php if(isset($errorEmailUsed) && $errorEmailUsed==true) echo '<span class="error">Cet email est déjà utilisé.</span>'; ?>
 				</div>
 				<div class="row">
 					<label for="">Pseudo</label>
-					<input type="text" name="pseudo" class="pseudo" value="" required>
+					<input type="text" name="pseudo" class="pseudo" value="<?php if(isset($_POST['pseudo'])) echo $_POST['pseudo']; ?>" required>
+					<?php if(isset($errorPseudoEmpty) && $errorPseudoEmpty==true) echo '<span class="error">Veuillez saisir un pseudo.</span>'; ?>
+					<?php if(isset($errorPseudoUsed) && $errorPseudoUsed==true) echo '<span class="error">Ce pseudo est déjà utilisé.</span>'; ?>
 				</div>
 				<div class="row">
 					<label for="">Mot de passe</label>
-					<input type="password" name="password" class="password" value="" required>
+					<input type="password" name="password" class="password" value="<?php if(isset($_POST['password'])) echo $_POST['password']; ?>" required>
+					<?php if(isset($errorPasswordEmpty) && $errorPasswordEmpty==true) echo '<span class="error">Veuillez saisir un mot de passe.</span>'; ?>
 				</div>
 				<div class="row">
 					<label for="">Confirmation</label>
-					<input type="password" name="confirmation" class="confirmation" value="" required>
+					<input type="password" name="confirmation" class="confirmation" value="<?php if(isset($_POST['confirmation'])) echo $_POST['confirmation']; ?>" required>
+					<?php if(isset($errorConfirmationEmpty) && $errorConfirmationEmpty==true) echo '<span class="error">Veuillez re-saisir votre mot de passe.</span>'; ?>
+					<?php if(isset($errorConfirmation) && $errorConfirmation==true) echo '<span class="error">Les mots de passe doivent être identiques.</span>'; ?>
 				</div>
 				<input type="submit" name="submit" value="S'inscrire" class="submit">
+				<a href="#" title="Se connecter !" class="connexion">J'ai déjà un compte</a>
 			</form>
 
 
@@ -93,7 +159,7 @@
 		// Saisie Email
 			form.find('.email').keyup(function() {
 
-				jQuery.ajax({ type: 'POST', dataType: "json", url: "/betaccess/wp-admin/admin-ajax.php",
+				jQuery.ajax({ type: 'POST', dataType: "json", url: "/gamesmarket/wp-admin/admin-ajax.php",
 					data: ({
 						action : 'getUsernameByMail',
 						mail : form.find('.email').val()
