@@ -11,8 +11,9 @@
  * @package ThemeGrill
  * @subpackage ColorMag
  * @since ColorMag 1.0
+ * Dev-Vincent
  */
-	get_header(); 
+	get_header();
 	?>
 
 <style media="screen">
