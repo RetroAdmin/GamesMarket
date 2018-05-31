@@ -148,7 +148,7 @@ thead tr th{
 /*
  Template name: Fiche_Megadrive_PAL
 */
- 
+
  get_header(); ?>
 
  <?php do_action( 'colormag_before_body_content' ); ?>
@@ -173,7 +173,7 @@ thead tr th{
  	<div id="global_id">
  		<div class="middle_div">
  			<div class="gauche">
- 				<?php 
+ 				<?php
  				$i = 0;
  				while ($i < 1) {
  				while ($donnees = $reponse->fetch()){
@@ -190,7 +190,7 @@ thead tr th{
 							<li><strong class="title_tab">Numéro :</strong><span class="donnees"> <?php
 							echo $donnees['ID'];
 							?></span></li>
-							<li><strong class="title_tab">Année :</strong><span class="donnees"> <?php 
+							<li><strong class="title_tab">Année :</strong><span class="donnees"> <?php
 							echo $donnees['ANNEE'];
 							?></span></li>
 							<li><strong class="title_tab">Genre :</strong><span class="donnees"> <?php echo $donnees['TYPE'];?></span></li>
@@ -208,10 +208,10 @@ thead tr th{
 					$i++;
 				}
 					?>
-					
-				
 
- 					
+
+
+
  				<div class="row packages ex-droite">
 
  					<div class="package">
@@ -250,7 +250,7 @@ $reponse = $bdd->query('SELECT * FROM sell');?>
   </tr>
   <thead>
   	<tbody>
-  		<?php while ($donnees = $reponse->fetch()){ 			
+  		<?php while ($donnees = $reponse->fetch()){
   			if ($donnees['Titre_du_jeu'] == get_the_title()){?>
   			  <tr class="ligne_tab">
   			  	<td><?php echo $donnees['Username'];?></td>

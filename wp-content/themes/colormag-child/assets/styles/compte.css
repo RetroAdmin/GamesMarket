@@ -1,0 +1,165 @@
+/* Espace Membre */
+  #account{
+    border:solid 1px #CECAC6;
+    overflow: hidden;
+  }
+  #account table{
+    margin:0;
+    margin-bottom:0;
+  }
+  #account .cont{
+    padding:10px;
+  }
+  #account img{
+    margin-bottom:0;
+  }
+/* Menu Membre */
+  #account .menu-espace-membre{
+    display: block;
+    width:100%;
+    overflow:hidden;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom:20px;
+  }
+  #account .menu-espace-membre li{
+    float:left;
+    padding: 0 20px;
+  }
+  #account .menu-espace-membre li a{
+    color:#707070;
+    width:100%;
+    height:100%;
+    display: block;
+  }
+  #account .menu-espace-membre li:hover,
+  #account .menu-espace-membre li.active{
+    background-color:#515151;
+  }
+  #account .menu-espace-membre li:hover a,
+  #account .menu-espace-membre li.active a{
+    color:#fefefe;
+  }
+/* Bloc 1 */
+  .bloc1 .title{
+    display:block;
+    height: 40px;
+    line-height: 40px;
+    margin:0;
+    padding: 0 10px;
+    color:#fff;
+    background-color: #2B9ECA;
+  }
+  .bloc1 table tr{
+    font-size:12px;
+    line-height:40px;
+  }
+  .bloc1 table td{
+    border:0;
+  }
+  .bloc1 table tr td:first-child{
+    font-weight:bold;
+  }
+
+
+
+
+
+/* ---- Tableau de bord ---------------------------------------------------------------------- */
+  #account.tableauBord .bloc1{
+    border-right:solid 1px #CECAC6;
+    border-left:solid 1px #CECAC6;
+    border-bottom:solid 1px #CECAC6;
+    margin-bottom:30px;
+  }
+  #account.tableauBord .bloc1 .liste{
+    width:100%;
+    text-align:center;
+    padding:15px 0;
+  }
+  #account.tableauBord .bloc1 .liste li{
+    display:inline-block;
+    margin:0 1px;
+  }
+  #account.tableauBord .affiche img{
+    max-height: 200px;
+  }
+
+
+/* ---- Informations du compte ---------------------------------------------------------------------- */
+  #account.monCompte .menu-espace-membre{
+    margin-bottom:0 !important;
+  }
+  #account.monCompte table{
+    margin: 0 0 1.5em;
+  }
+  #account.monCompte .blocAvatar{
+    background-color: #F9F9F8;
+    padding: 30px;
+    border-bottom:solid 1px #CECAC6;
+    margin-bottom: 15px;
+  }
+  #account.monCompte .blocAvatar img,
+  #account.monCompte .blocAvatar p{
+    display:inline-block;
+    vertical-align:middle;
+    margin:0 10px 0 0;
+    padding:0;
+  }
+  #account.monCompte .blocAvatar p{
+    font-size:25px;
+  }
+  #account.monCompte .details .column-one{
+    width:200px;
+  }
+
+
+/* ---- Mes achats ---------------------------------------------------------------------- */
+  #account.mesAchats #maListe li{
+    margin-bottom: 40px;
+  }
+  #account.mesAchats #maListe .left{
+    width: 30%;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  #account.mesAchats #maListe .left .affiche{
+    width: 80%;
+    margin: 0 auto;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  #account.mesAchats #maListe .right{
+    width:69%;
+    display:inline-block;
+    vertical-align:middle;
+  }
+
+
+
+/* ---- Mes ventes ---------------------------------------------------------------------- */
+  #account.mesVentes #maListe li{
+    display:inline-block;
+    width:31%;
+    box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    margin:0 1% 30px;
+  }
+  #account.mesVentes #maListe li .content{
+    padding:0 7px 7px;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+  }
+  #account.mesVentes #maListe li .title{
+    color: #299dcc;
+    line-height: 16px;
+    font-size: 16px;
+    margin:7px 0 10px;
+  }
+  #account.mesVentes #maListe li .price{
+    color: #999999;
+    line-height: 16px;
+    font-size: 16px;
+    margin: 0;
+  }

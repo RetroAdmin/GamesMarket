@@ -1,0 +1,82 @@
+
+/* Page constructeur */
+#pageConstructeur{
+	min-height: 75vh;
+}
+  #pageConstructeur .mainLogo{
+    display:block;
+    width:100%;
+    max-width:400px;
+    margin:20px auto;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  #pageConstructeur .consoles{
+    margin-bottom: 30px;
+  }
+  #pageConstructeur .consoles a{
+    display:block;
+    width:100%;
+    height:100%;
+    padding:20px;
+    text-align: center;
+  }
+  #pageConstructeur .consoles a img{
+    max-width:100%;
+    height:140px;
+    margin:0 auto;
+  }
+  #pageConstructeur .consoles a h2{
+    display:block;
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+    margin: 15px 0 0;
+    padding:0;
+  }
+
+
+
+
+
+/* Page Console */
+  #pageConsole .mainLogo{
+    display:block;
+    width:100%;
+    max-width:300px;
+    margin:20px auto;
+    margin-top: 0;
+  }
+  #pageConsole table{
+    border: 0px solid #ff00d8;
+  }
+  #pageConsole table tr:nth-child(even){
+    background-color: #f2f2f2;
+  }
+  #pageConsole table tr:hover{
+    background-color: rgba(87,210,255,0.1);
+  } 
+  #pageConsole table tr th{
+    background:rgba(87,210,255,0.6);
+    color:#ff00d8;
+    text-align: center;
+    padding: 4px 0
+  }
+  #pageConsole table tr a{
+    color: #ff00d8;
+  }
+  #pageConsole table tr a:hover{
+    color: rgba(87,210,255,1);
+  }
+  #pageConsole table tr td{
+    padding: 2px 5px;
+  }
+  #pageConsole table tr td:nth-child(1),
+  #pageConsole table tr td:nth-child(2),
+  #pageConsole table tr td:nth-child(4){
+    text-align: center;
+  }
+  #pageConsole table tr td:nth-child(5),
+  #pageConsole table tr td:nth-child(6){
+    text-align: right;
+  }

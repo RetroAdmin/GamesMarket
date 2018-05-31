@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - ColorMag package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-01-31 07:12:24+0000\n"
+"PO-Revision-Date: 2018-02-26 12:15:21+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1107,6 +1107,14 @@ msgstr "Zeigt Beiträge einer Kategorie"
 msgid "Show latest Posts"
 msgstr "Zeigt neueste Beiträge"
 
+#: inc/widgets/widgets.php:188
+msgid "Shows widgets at footer sidebar four."
+msgstr "Zeigt Widget in Footer Seitenleiste 4."
+
+#: inc/widgets/widgets.php:186
+msgid "Footer Sidebar Four"
+msgstr "Footer Seitenleiste 4"
+
 #: inc/elementor/widgets/colormag-elementor-widgets-block-1.php:148
 #: inc/elementor/widgets/colormag-elementor-widgets-block-2.php:148
 #: inc/elementor/widgets/colormag-elementor-widgets-block-4.php:148
@@ -1120,14 +1128,6 @@ msgstr "Zeigt neueste Beiträge"
 #: inc/widgets/widgets.php:523 inc/widgets/widgets.php:710
 msgid "Number of posts to display:"
 msgstr "Anzahl der anzuzeigenden Beiträge:"
-
-#: inc/widgets/widgets.php:188
-msgid "Shows widgets at footer sidebar four."
-msgstr "Zeigt Widget in Footer Seitenleiste 4."
-
-#: inc/widgets/widgets.php:186
-msgid "Footer Sidebar Four"
-msgstr "Footer Seitenleiste 4"
 
 #: inc/widgets/widgets.php:142
 msgid "Advertisement Above The Footer"
@@ -1688,7 +1688,7 @@ msgstr "Hauptmenü"
 
 #: content.php:38
 msgid "Read more"
-msgstr "Mehr lesen"
+msgstr "Weiterlesen"
 
 #: content-page.php:30 content-single.php:48
 msgid "Pages:"

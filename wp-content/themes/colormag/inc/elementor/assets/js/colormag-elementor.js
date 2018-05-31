@@ -1,3 +1,3 @@
-/**
- * ColorMag Custom Elementor JS settings
+/**
+ * ColorMag Custom Elementor JS settings
  */

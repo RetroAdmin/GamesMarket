@@ -1,0 +1,20 @@
+{
+  "name": "WP Masquerade",
+  "version": "1.0.1",
+  "homepage": "https://github.com/Swingline0/masquerade",
+  "authors": [
+    "Eran <me@eran.sh>"
+  ],
+  "description": "Allow WordPress Administrators to masquerade as other users",
+  "license": "GPLv2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chosen_v1.3.0": "https://github.com/harvesthq/chosen/releases/download/v1.3.0/chosen_v1.3.0.zip"
+  }
+}

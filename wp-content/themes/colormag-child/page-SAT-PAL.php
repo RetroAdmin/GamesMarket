@@ -154,7 +154,7 @@ thead tr th{
 			<div class="gauche"><?php
 			try
 			{
-				$bdd = new PDO('mysql:host=gamesmarberoot.mysql.db;dbname=gamesmarberoot;charset=utf8', 'gamesmarberoot', 'Eminem95500');
+				$bdd = new PDO('mysql:host=gamesmarberoot.mysql.db;dbname=gamesmarberoot;charset=utf8', 'gamesmarberoot', 'Leane2015');
 			}
 			catch(Exception $e)
 			{

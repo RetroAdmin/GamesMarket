@@ -1287,15 +1287,16 @@ function cpt_slider_slides_content($post) {
 // ##### META BOX CONTENT - 'Slider Preview/Shortcode' BOX #####
 function cpt_slider_shortcode_content($post) {
 	$post_status = get_post_status($post->ID);
+	$allow_shortcodes = get_post_meta($post->ID, 'sa_shortcodes', true);
 	$shortcode = '[slide-anything id="'.$post->ID.'"]';
 	echo "<div id='sa_slider_shortcode'>".esc_html($shortcode)."</div>\n";
 	echo "<div id='sa_shortcode_copy' class='button button-secondary'>Copy to Clipboard</div>\n";
-	if ($post_status == 'publish') {
+	if (($post_status == 'publish') && ($allow_shortcodes != '1')) {
 		echo "<div id='sa_preview_slider' class='button button-secondary' ";
 		echo "onClick='document.getElementById(\"sa_preview_popup\").style.display = \"block\";'>Preview Slider</div>\n";
 	}
 
-	if ($post_status == 'publish') {
+	if (($post_status == 'publish') && ($allow_shortcodes != '1')) {
 		// DISPLAY SLIDER PREVIEW POPUP
 		echo "<div id='sa_preview_popup' style='display:none;'>\n";
 		echo "<div id='sa_preview_wrapper'>\n";

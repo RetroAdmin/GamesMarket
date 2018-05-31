@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Hello Dolly - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-11-05 21:22:50+0000\n"
+"PO-Revision-Date: 2018-04-27 10:03:32+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,10 +10,6 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - Hello Dolly - Stable (latest release)\n"
-
-#. Author URI of the plugin/theme
-msgid "http://ma.tt/"
-msgstr "http://ma.tt/"
 
 #. Author of the plugin/theme
 msgid "Matt Mullenweg"
@@ -30,3 +26,7 @@ msgstr "https://wordpress.org/plugins/hello-dolly/"
 #. Plugin Name of the plugin/theme
 msgid "Hello Dolly"
 msgstr "Hello Dolly"
+
+#. Author URI of the plugin/theme
+msgid "https://ma.tt/"
+msgstr "https://ma.tt/"

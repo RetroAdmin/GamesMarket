@@ -4,7 +4,7 @@ try
 
 {
 
-	$bdd = new PDO('mysql:host=gamesmarberoot.mysql.db;dbname=gamesmarberoot;charset=utf8', 'gamesmarberoot', 'Eminem95500');
+	$bdd = new PDO('mysql:host=gamesmarberoot.mysql.db;dbname=gamesmarberoot;charset=utf8', 'gamesmarberoot', 'Leane2015');
 
 }
 
@@ -148,7 +148,7 @@ thead tr th{
 /*
  Template name: Fiche_SNES_PAL
 */
- 
+
  get_header(); ?>
 
  <?php do_action( 'colormag_before_body_content' ); ?>
@@ -174,7 +174,7 @@ thead tr th{
  		<div class="middle_div">
  			<div class="gauche">
 
- 				<?php 
+ 				<?php
  				while ($donnees = $reponse->fetch()){
  					if ($donnees['NOM'] == get_the_title()) {
  						echo '<img class="cover" src="'.$donnees['IMAGE'].'" alt="cover_'.$donnees['IMAGE'].'"/>';
@@ -189,7 +189,7 @@ thead tr th{
 							<li><strong class="title_tab">Numéro :</strong><span class="donnees"> <?php
 							echo $donnees['ID'];
 							?></span></li>
-							<li><strong class="title_tab">Année :</strong><span class="donnees"> <?php 
+							<li><strong class="title_tab">Année :</strong><span class="donnees"> <?php
 							echo $donnees['ANNEE'];
 							?></span></li>
 							<li><strong class="title_tab">Genre :</strong><span class="donnees"> <?php echo $donnees['TYPE'];?></span></li>
@@ -238,7 +238,7 @@ $reponse = $bdd->query('SELECT * FROM sell');?>
   </tr>
   <thead>
   	<tbody>
-  		<?php while ($donnees = $reponse->fetch()){ 			
+  		<?php while ($donnees = $reponse->fetch()){
   			if ($donnees['Titre_du_jeu'] == get_the_title()){?>
   			  <tr class="ligne_tab">
   			  	<td><?php echo $donnees['Username'];?></td>

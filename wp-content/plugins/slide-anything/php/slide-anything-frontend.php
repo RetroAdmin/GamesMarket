@@ -7,7 +7,7 @@ add_shortcode('slide-anything', 'slide_anything_shortcode');
 
 /* ##### ROOT FUNCTION THAT IS CALLED TO BY THE 'slide-anything' SHORTCODE ##### */
 function slide_anything_shortcode($atts) {
-	$sa_pro_version = validate_slide_anything_pro_registration();
+	$sa_pro_version = esc_attr(get_option('sap_valid_license'));
 	wp_enqueue_script('jquery');
 	wp_register_script('owl_carousel_js', SA_PLUGIN_PATH.'owl-carousel/owl.carousel.min.js', array('jquery'), '2.2.1', true);
 	wp_enqueue_script('owl_carousel_js');
@@ -30,7 +30,6 @@ function slide_anything_shortcode($atts) {
 		'id' => 0,
 	), $atts));
 	$output = '';
-	
 	if ($id == 0) {
 		// SHORTCODE 'id' PARAMETER PROVIDED IS INVALID
 		$output .= "<div id='sa_invalid_postid'>Slide Anything shortcode error: A valid ID has not been provided</div>\n";

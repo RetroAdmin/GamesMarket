@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WordPress Simple PayPal Shopping Cart - Development (trunk) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-12-22 08:46:50+0000\n"
+"PO-Revision-Date: 2018-02-15 08:58:26+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,14 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - WordPress Simple PayPal Shopping Cart - Development (trunk)\n"
+
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:336
+msgid "View the addon details"
+msgstr "Ver los detalles de la extensión"
+
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:335
+msgid "PayPal has removed this feature. We have created an addon so you can still collect instructions from customers at the time of checking out. "
+msgstr "PayPal ha eliminado esta característica. Hemos creado una extensión para que puedas seguir recogiendo instrucciones de los clientes en el momento de realizar el pago."
 
 #: includes/admin/wp_shopping_cart_menu_tools.php:9
 msgid "Simple Cart Tools"
@@ -82,11 +90,11 @@ msgstr "Envío (Opcional)"
 msgid "Product Name"
 msgstr "Nombre del producto"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:323
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:313
 msgid "Specify an image URL if you want to customize the paypal checkout page with a custom logo/image. The image URL must be a 'https' URL otherwise PayPal will ignore it."
 msgstr "Especifique una URL de imagen si desea personalizar la página de pago de PayPal con un logotipo o una imagen personalizada. La URL de la imagen debe ser una dirección URL 'https', de lo contrario PayPal lo ignorará."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:321
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:311
 msgid "Custom Checkout Page Logo Image"
 msgstr "Imagen de logotipo de la página de pago personalizada"
 
@@ -118,19 +126,19 @@ msgstr "Exportar pedidos de encargo del carrito"
 msgid "Tips and Tricks HQ, Ruhul Amin, mra13"
 msgstr "Tips and Tricks HQ, Ruhul Amin, mra13"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:338
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:328
 msgid "Check this option if you are using a caching solution on your site. This will bypass the nonce check on the add to cart buttons."
 msgstr "Selecciona esta opción si estas usando una solución de caché en tu sitio. Esto omitirá la verificación nonce en los botones para agregar al carrito."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:336
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:326
 msgid "Disable Nonce Check for Add to Cart"
 msgstr "Desactiva el chequeo de nonce para añadir al carrito"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:275
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:273
 msgid "The customer will be sent to the above page if the cancel link is clicked on the PayPal checkout page."
 msgstr "El cliente será enviado a la página anterior, si haces clic en el enlace de cancelación en la página de pago de PayPal."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:274
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:272
 msgid "Cancel URL"
 msgstr "Cancelar el URL"
 
@@ -145,7 +153,7 @@ msgstr "https://www.tipsandtricks-hq.com/"
 
 #. Description of the plugin/theme
 msgid "Simple WordPress Shopping Cart Plugin, very easy to use and great for selling products and services from your blog!"
-msgstr "¡Simple WordPress Shopping Cart Plugin, es muy fácil de utilizar y excelente para vender productos y servicios desde tu blog!"
+msgstr "¡WordPress Simple PayPal Shopping Cart es muy fácil de utilizar y excelente para vender productos y servicios desde tu blog!"
 
 #. Plugin URI of the plugin/theme
 msgid "https://www.tipsandtricks-hq.com/wordpress-simple-paypal-shopping-cart-plugin-768"
@@ -153,11 +161,11 @@ msgstr "https://www.tipsandtricks-hq.com/wordpress-simple-paypal-shopping-cart-p
 
 #. Plugin Name of the plugin/theme
 msgid "WP Simple Paypal Shopping cart"
-msgstr "WP Simple Paypal Shopping cart"
+msgstr "WordPress Simple PayPal Shopping Cart"
 
 #: wp_shopping_cart_shortcodes.php:127
 msgid "Cart is empty"
-msgstr "El carrito esta vació "
+msgstr "El carrito está vacío"
 
 #: wp_shopping_cart_shortcodes.php:122
 msgid "View Cart"
@@ -287,249 +295,245 @@ msgstr "Las siguientes opciones afectan a los mensajes de correo electrónico qu
 msgid "Purchase Confirmation Email Settings"
 msgstr "Ajustes del correo electrónico de confirmación de compra"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:386
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:384
 msgid "Give it a good rating"
 msgstr "Dale una buena valoración"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:386
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:384
 msgid "Like the Simple WordPress Shopping Cart Plugin?"
-msgstr "¿Te agrada Simple WordPress Shopping Cart Plugin?"
+msgstr "¿Te gusta el plugin WordPress Simple PayPal Shopping Cart?"
 
 #: includes/admin/wp_shopping_cart_menu_email_settings.php:150
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:382
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:380
 msgid "Update Options &raquo;"
 msgstr "Actualización de opciones &raquo;"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:373
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:371
 msgid "Check this option if you want to do PayPal sandbox testing. You will need to create a PayPal sandbox account from PayPal Developer site"
 msgstr "Selecciona esta opción si vas a realizar pruebas de sandbox en PayPal. Tienes que abrir una cuenta de sandbox en PayPal desde el sitio PayPal Developer."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:371
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:369
 msgid "Enable Sandbox Testing"
 msgstr "Activar la prueba de sandbox"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:360
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:358
 msgid "If checked, debug output will be written to the log file. This is useful for troubleshooting post payment failures"
 msgstr "Si se selecciona, la salida de depuración se escribirá en el archivo de registro. Esto es útil para resolver los problemas de fracasos de pagos posteriores"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:358
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:356
 msgid "Enable Debug"
 msgstr "Activar depuración"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:352
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:350
 msgid "Testing and Debugging Settings"
 msgstr "Ajustes de pruebas y depuración"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:346
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:344
 msgid "This plugin lets you run your own affiliate campaign/program and allows you to reward (pay commission) your affiliates for referred sales"
 msgstr "Este plugin te permite ejecutar tu propia campaña / programa de afiliados y te permite recompensar con (pagar comisiones) a tus afiliados por las ventas recomendadas."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:346
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:344
 msgid "Check this if using with the"
 msgstr "Compruebe esto si se utiliza con el"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:344
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:342
 msgid "Use WP Affiliate Platform"
 msgstr "Usar WP Affiliate Platform"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:330
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:320
 msgid "If checked the script will check to make sure that the PayPal email address specified is the same as the account where the payment was deposited (Usage of PayPal Email Alias will fail too)."
 msgstr "Si se selecciona, la secuencia de comandos comprobará para asegurarse de que la dirección de correo electrónico de PayPal especificada sea la misma que la cuenta donde el pago fue depositado (El uso de alias de correo electrónico de PayPal también fallará)."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:329
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:319
 msgid "Use Strict PayPal Email Address Checking"
 msgstr "Utiliza la comprobación estricta de la dirección de correo electrónico de PayPal"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:315
-msgid "Specify the text that you want to use for the note field on PayPal checkout page to collect special instruction (leave this field empty if you don't need to customize it). The default label for the note field is \"Add special instructions to merchant\"."
-msgstr "Especifique el texto que desea utilizar para el campo de la nota en la página de pago de PayPal para cobrar instrucción especial (deje este campo vacío si no es necesario personalizarlo). La etiqueta predeterminada para el campo de la nota es \"Añadir instrucciones especiales al comerciante\"."
-
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:313
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:334
 msgid "Customize the Note to Seller Text"
 msgstr "Personalizar la nota del texto del vendedor"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:307
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:305
 msgid "If ticked the shopping cart image will not be shown."
 msgstr "Si se activa la imagen del carrito de compra no se mostrará."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:306
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:304
 msgid "Hide Shopping Cart Image"
 msgstr "Ocultar Imagen del carrito de compras"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:299
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:297
 msgid "If checked the shopping cart will be reset when the customer lands on the return URL (Thank You) page."
 msgstr "Si se selecciona, el carrito de compras se restablecerá cuando el cliente llegue a la página (Agradecimiento) de la URL de retorno."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:297
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:295
 msgid "Reset Cart After Redirection to Return Page"
 msgstr "Vaciar el carrito después de volver a la página."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:293
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:291
 msgid "If checked the PayPal checkout page will be opened in a new tab/window when the user clicks the checkout button."
 msgstr "Si se marca la página de pago de PayPal se abrirá en una nueva pestaña/ventana cuando el usuario hace clic en el botón de pago."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:291
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:289
 msgid "Open PayPal Checkout Page in a New Tab"
 msgstr "Abrir la página de pago de PayPal en una nueva pestaña"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:287
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:285
 msgid "If checked the visitor will be redirected to the Checkout page after a product is added to the cart. You must enter a URL in the Checkout Page URL field for this to work."
 msgstr "Si se selecciona el visitante será redirigido a la página de pago después de añadir un producto al carrito. Debes introducir una URL en el campo de la URL de página de pago para que esto funcione."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:286
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:284
 msgid "Checkout Page URL"
 msgstr "URL de la página de pago"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:284
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:282
 msgid "Automatic redirection to checkout page"
 msgstr "Redirección automática a la página de pago"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:280
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:278
 msgid "This is the URL of your products page if you have any. If used, the shopping cart widget will display a link to this page when cart is empty"
-msgstr "Esto es el URL de la página de productos si tiene alguna. Si se utiliza, el widget del carrito de compras mostrará un enlace a esta página cuando el carrito este vació."
+msgstr "Esta es la URL de la página de productos si tienes alguna. Si se utiliza, el widget del carrito de compra mostrará un enlace a esta página cuando el carrito este vacío."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:279
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:277
 msgid "Products Page URL"
 msgstr "URL de la página de productos"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:270
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:268
 msgid "This is the URL the customer will be redirected to after a successful payment"
 msgstr "Esta es la URL que el cliente va a ser redirigido después de haber pagado."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:269
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:267
 msgid "Return URL"
 msgstr "URL de retorno"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:263
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:261
 msgid "To use a customized image as the button simply enter the URL of the image file."
 msgstr "Para utilizar una imagen personalizada como botón sólo escribe la dirección de la URL del archivo de la imagen."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:261
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:259
 msgid "Add to Cart button text or Image"
 msgstr "Texto del botón de añadir al carrito o imagen "
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:257
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:255
 msgid "Using this will ignore any other shipping options that you have specified in this plugin."
 msgstr "Usando esto se ignorará cualquier otra opción de gastos de envío que hayas especificado en este plugin."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:257
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:255
 msgid "PayPal profile based shipping"
 msgstr "Envío basado en el perfil de Paypal"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:257
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:255
 msgid "Check this if you want to use"
 msgstr "Marque esta opción si desea utilizar"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:256
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:254
 msgid "Use PayPal Profile Based Shipping"
 msgstr "Utiliza el envío de base del perfil de PayPal"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:252
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:250
 msgid "If checked the customer will be forced to enter a shipping address on PayPal when checking out."
 msgstr "Si se selecciona, el cliente será forzado a introducir una dirección de envío en PayPal al finalizar la compra."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:251
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:249
 msgid "Must Collect Shipping Address on PayPal"
 msgstr "Recoger la dirección de envío en Paypal"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:247
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:245
 msgid "When a customer orders more than this amount he/she will get free shipping. Leave empty if you do not want to use it."
 msgstr "Cuando un cliente ordena una cantidad mayor recibirá el envío gratis. Dejar en blanco si no desea utilizarlo."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:246
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:244
 msgid "Free Shipping for Orders Over"
 msgstr "Envío gratuito para pedidos superiores a"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:242
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:240
 msgid "Learn More on Shipping Calculation"
 msgstr "Lea más información sobre el cálculo de envío"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:242
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:240
 msgid "This is the base shipping cost that will be added to the total of individual products shipping cost. Put 0 if you do not want to charge shipping cost or use base shipping cost."
 msgstr "Esto es el coste base de los gastos de envío, que se sumará al total de los costes unitarios de envío del producto. Pon 0 si no quieres cargar el coste de envío o usar el coste de base de envió."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:241
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:239
 msgid "Base Shipping Cost"
 msgstr "Coste base del envío"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:235
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:233
 msgid "Currency Symbol"
 msgstr "Símbolo de la moneda"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:236
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:263
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:234
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:261
 msgid "e.g."
 msgstr "e.j."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:195
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:193
 msgid "Currency"
 msgstr "Divisa"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:190
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:188
 msgid "You can either enter plain text or the URL of an image that you want to show when the shopping cart is empty"
 msgstr "Puedes introducir texto sin formato o la URL de una imagen que deseas mostrar cuando el carrito está vacío"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:189
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:187
 msgid "Text/Image to Show When Cart Empty"
 msgstr "Texto/Imagen para mostrar cuando la cesta esta vacía"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:185
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:183
 msgid "Shopping Cart title"
 msgstr "Título del carrito de compras"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:181
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:179
 msgid "Paypal Email Address"
 msgstr "Dirección de correo electrónico de Paypal"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:175
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:173
 msgid "PayPal and Shopping Cart Settings"
 msgstr "Ajustes de PayPal y el carrito de compras"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:166
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:164
 msgid "Example shopping cart shortcode usage:"
 msgstr "Ejemplo de uso del chortcode del carrito de compras: "
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:165
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:163
 msgid "to a post or page or use the sidebar widget to add the shopping cart to the sidebar."
 msgstr "a una entrada o página o utiliza el widget de la barra lateral para agregar el carrito de compras a la barra lateral."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:165
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:163
 msgid "To add the shopping cart to a post or page (example: a checkout page) simply add the shortcode"
 msgstr "Para agregar el carrito de compras a una entrada o una página (ejemplo: una página de pago) sólo tienes que añadir el shortcode"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:165
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:163
 msgid "Step 2) "
 msgstr "Paso 2)"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:164
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:162
 msgid "Example add to cart button shortcode usage:"
 msgstr "Ejemplo del uso del shortcode del botón del carrito de compras:"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:163
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:161
 msgid "to a post or page next to the product. Replace PRODUCT-NAME and PRODUCT-PRICE with the actual name and price of your product."
 msgstr "para una entrada o página junto al producto. Reemplaza NOMBRE-PRODUCTO y PRECIO-PRODUCTO con el nombre y precio actual de tu producto."
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:163
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:161
 msgid "PRODUCT-PRICE"
 msgstr "PRECIO-PRODUCTO"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:163
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:161
 msgid "PRODUCT-NAME"
 msgstr "NOMBRE-PRODUCTO"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:163
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:161
 msgid "To add an 'Add to Cart' button for a product simply add the shortcode"
 msgstr "Para añadir un botón \"Añadir al carrito\" para un producto simplemente agrega el shortcode"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:163
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:161
 msgid "Step 1) "
 msgstr "Paso 1)"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:160
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:158
 msgid "Quick Usage Guide"
 msgstr "Instrucciones rápidas para el uso"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:61
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:60
 msgid "Options Updated!"
 msgstr "¡Opciones actualizadas!"
 
@@ -663,7 +667,7 @@ msgstr "¿Necesita un plugin de carrito de compras con muchas opciones y un buen
 
 #: wp_shopping_cart_misc_functions.php:172
 msgid "Your cart is empty"
-msgstr "Su carrito está vació"
+msgstr "Tu carrito está vacío"
 
 #: wp_shopping_cart_misc_functions.php:171
 msgid "Your Shopping Cart"
@@ -719,14 +723,14 @@ msgstr "Ajustes del descuento / cupón"
 
 #: includes/admin/wp_shopping_cart_menu_discounts.php:62
 #: includes/admin/wp_shopping_cart_menu_email_settings.php:60
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:156
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:154
 #: includes/admin/wp_shopping_cart_menu_tools.php:29
 msgid "WP Simple Cart Homepage"
 msgstr "Página de inicio de WP Simple Cart"
 
 #: includes/admin/wp_shopping_cart_menu_discounts.php:61
 #: includes/admin/wp_shopping_cart_menu_email_settings.php:59
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:155
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:153
 #: includes/admin/wp_shopping_cart_menu_tools.php:28
 msgid "For more information, updates, detailed documentation and video tutorial, please visit:"
 msgstr "Para obtener más información, actualizaciones, documentación detallada y un tutorial de vídeo, por favor visite:"
@@ -747,7 +751,7 @@ msgstr "WP Shopping Cart"
 msgid "WP Paypal Shopping Cart"
 msgstr "WP Paypal Shopping Cart"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:81
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:80
 #: wp_shopping_cart.php:346 wp_shopping_cart.php:422 wp_shopping_cart.php:499
 #: wp_shopping_cart.php:543 wp_shopping_cart.php:551
 msgid "Add to Cart"
@@ -819,12 +823,12 @@ msgstr "Presiona enter para enviar nueva cantidad."
 msgid "Cart"
 msgstr "Carrito"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:68
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:67
 #: includes/wspsc-cart-functions.php:34
 msgid "$"
 msgstr "$"
 
-#: includes/admin/wp_shopping_cart_menu_general_settings.php:65
+#: includes/admin/wp_shopping_cart_menu_general_settings.php:64
 #: includes/wspsc-cart-functions.php:30
 msgid "USD"
 msgstr "USD"

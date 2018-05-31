@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: BUG-EMAIL-ADDR <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: yyyy-mm-dd hh:mm+0000\n"
+"PO-Revision-Date: 2018-05-12 14:59+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.7\n"
+"Last-Translator: Andrea <genius2000@gmail.com>\n"
+"Language: it_IT\n"
+
+#: myoptions.php:10
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Non hai i permessi necessari per accedere a questa pagina."
+
+#: myoptions.php:21
+msgid ""
+"Thanks for using PHP Everywhere. If you have any questions, feel free to ask "
+"<a href=\"mailto:alexandria96gmx.de\">me</a>.<br />I created this plugin "
+"because I have not found a Wordpress PHP plugin which is simple to use and "
+"provides a good user experience while being able to use PHP or HTML in "
+"Posts, Pages or Widgets."
+msgstr ""
+"Grazie per l'utilizzo di PHP Everywhere. Se avete domande, non esitate a "
+"chiedere a <a href=\"mailto:alexandria96gmx.de\">me</a>.<br>Ho creato questo "
+"plugin perché non ho trovato un plugin di Wordpress PHP  semplice da usare e "
+"che fornisca un'esperienza utente ottimale permettendo di usare PHP o HTML "
+"nel post, pagine o widget."
+
+#: myoptions.php:22
+msgid "User role management"
+msgstr "Gestione ruoli utente"
+
+#: myoptions.php:23
+msgid "Who can modify the PHP in posts and pages?"
+msgstr "Chi può modificare il PHP in post e pagine?"
+
+#: myoptions.php:26
+msgid "Administrator, editor, author"
+msgstr "Amministratore, editore, autore"
+
+#: myoptions.php:27
+msgid "Administrator only"
+msgstr "Solo l’amministratore"
+
+#: myoptions.php:31
+msgid "Usage"
+msgstr "Uso"
+
+#: myoptions.php:32
+msgid "Widgets"
+msgstr "Widget"
+
+#: myoptions.php:33
+msgid ""
+"Simply activate the <pre>PHP + HTML</pre> Widget. in your sidebar and paste "
+"your PHP code including the PHP Tags like this:\n"
+"<pre>&lt;?php  echo(\"Hello, World!\"); ?&gt;</pre>\n"
+"You code may contain HTML Elements or have multiple lines."
+msgstr ""
+"È sufficiente attivare il<pre>PHP + HTML</pre>Widget. nella tua sidebar e "
+"incollare il codice PHP tra i tag PHP come questo:<pre><? php  echo "
+"(\"Hello, World!\");? ></pre>Il tuo Codice può avere più righe o contenere "
+"elementi HTML."
+
+#: myoptions.php:36
+msgid "Posts & Pages"
+msgstr "Articoli e Pagine"
+
+#: myoptions.php:37
+msgid ""
+"Edit or create a new post or page and simply put your PHP Code including the "
+"PHP Tags into the side options_box, which is labeled \"PHP Everywhere\". "
+"Then put the <pre>[php_everywhere]</pre> shortcode where you want the code "
+"to appear. Your code may contain multiple lines or HTML Tags."
+msgstr ""
+"Modifica o crea un nuovo articolo o una nuova pagina, semplicemente scrivi "
+"il tuo codice PHP, compreso di Tags PHP nella side box con etichetta “PHP "
+"Everywhere”. Poi metti lo shortcode <pre>[php_everywhere]</pre> dove vuoi "
+"che il tuo codice venga eseguito. Il tuo codice può contenere varie righe, "
+"sia PHP sia HTML."
+
+#: myoptions.php:38
+msgid "Multiple PHP instances"
+msgstr "Più istanze PHP"
+
+#: myoptions.php:39
+msgid ""
+"If you want to use multiple PHP instances use the shortcode with the "
+"instance parameter like this:"
+msgstr ""
+"Se si desidera utilizzare più istanze PHP usa lo shortcode con il parametro "
+"di istanza come questo:"
+
+#: myoptions.php:39
+msgid "Your PHP snippet should look like this:"
+msgstr "Il frammento di codice PHP dovrebbe assomigliare a questo:"
+
+#: myoptions.php:49
+msgid "Changelog"
+msgstr "Changelog"
+
+#: myoptions.php:50
+msgid ""
+"Go to <a href=\"http://www.alexander-fuchs.net/php-everywhere/\" target="
+"\"_blank\">http://www.alexander-fuchs.net/php-everywhere/</a> to view the "
+"changelog and more."
+msgstr ""
+"Vai a <a href=\"http://www.alexander-fuchs.net/php-everywhere/\" target="
+"\"_blank\">http://www.alexander-fuchs.net/php-everywhere/</a> per "
+"visualizzare il changelog e altro ancora."
+
+#: myoptions.php:51
+msgid "Like this Plugin? Support me :)"
+msgstr "Ti piace questo Plugin? Supportami:)"
+
+#: myoptions.php:52
+msgid "Follow me"
+msgstr "Seguimi"
+
+#: myoptions.php:59
+msgid "Subscribe"
+msgstr "Registrati"
+
+#: myoptions.php:60
+msgid ""
+"Please visit <a href=\"http://www.alexander-fuchs.net\" target=\"_blank"
+"\">http://www.alexander-fuchs.net</a> to subscribe to my newsletter."
+msgstr ""
+"Si prega di visitare <a href=\"http://www.alexander-fuchs.net\" target="
+"\"_blank\">http://www.alexander-fuchs.net</a> per iscriversi alla mia "
+"newsletter."
+
+#: myoptions.php:61
+msgid "Donate"
+msgstr "Dona"
+
+#: options_box.php:13
+msgid "Just put [php_everywhere] where you want the code to be executed."
+msgstr ""
+"Basta mettere [php_everywhere] dove si desidera che il codice venga eseguito."
+
+#: widget.php:6
+msgid "Enables the execution of PHP and HTML"
+msgstr "Consente l'esecuzione di PHP e HTML"

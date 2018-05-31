@@ -8,3 +8,338 @@ Version: 0.1.0
 */
 
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+
+
+	html, body{
+	margin: 0;
+}
+@media screen and (max-width: 3250px){
+#site-navigation {
+	position: relative;
+	background-color: rgba(87,210,255,0.6);
+	z-index: 999;
+	top: -50%;
+	height: 45px;
+}
+.main-navigation .sub-menu, .main-navigation .children{
+			background-color: rgba(87,210,255,0.7);
+		}
+h1{
+	text-align: center;
+}
+.home-icon{
+	float: left;
+}
+#menu-jeuxvideo{
+	display: inline-block;
+}
+
+.main-navigation a, .home-icon .fa{
+	color: black;
+}
+.main-navigation a{
+	font-family: "Orbitron";
+	max-height: 42px;
+	font-weight: 900;
+	font-size: 17px;
+}
+.main-navigation a img{
+	height: 23px;
+	width: 80px;
+	margin-left: 2px;
+}
+.fontawesome-text{
+	display: none;
+}
+.sub-menu{
+	max-width: 100%;
+	background-color: rgba(255,255,255,0.20);
+}
+.sub-menu>li{
+	border: 1px solid rgba(87,210,255,0.6);
+}
+.main-navigation ul li ul li ul {
+	left: 100%;
+	top: 0;
+}
+#menu-item-9438>ul {
+	max-width: 217%;
+	right: 0;
+}
+#menu-item-9438>ul>li{
+	width: 100%;
+}
+.main-navigation ul li ul li a{
+	font-size: 13px;
+}
+}
+.fa-camera-retro, .fa-user{
+	color: black;
+}
+@media screen and (max-width: 1250px){
+	.main-navigation a img{
+		width: 78px;
+	}
+}
+@media screen and (max-width: 1366px){
+	.main-navigation li.menu-item-has-children > a::after{
+		color: black;
+	}
+}
+@media screen and (max-width: 1024px){
+	.main-navigation a img{
+		width: 50px;
+		margin-left: 0;
+		margin-top: -4px;
+	}
+	.main-navigation ul li ul li{
+		height: 35px;
+	}
+	.main-navigation ul li ul li a{
+		font-size: 8px;
+	}
+	img{
+		width: 50px;
+		margin-bottom: 0;
+
+	}
+	.sega, .nintendo, .microsoft, .sony, .snk, .atari, .nec{
+		max-width: 100%;
+	}
+	.fa-user{
+		font-size: 12px!important;
+		color: black;
+	}
+	#menu-jeuxvideo{
+		position: fixed;
+		left: 6%;
+	}
+	.main-navigation li.menu-item-has-children > a::after{
+		color: black;
+	}
+}  
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	.menu-toggle, .sub-toggle{
+		display: none;
+	}
+	#menu-jeuxvideo{
+		position: fixed;
+		left: 0;
+		display: flex;
+		left: 8%;
+	}
+	.sub-menu li{
+		margin-top: 0!important;
+		margin-left: 0!important;
+		border-top: 1px solid #000000;
+	}
+	.main-navigation a img{
+		width: 30px;
+		margin-left: 0;
+		height: 15px;
+	}
+	.main-navigation li{
+		margin-top: 8px;
+		margin-left: 5px;
+	}
+	.main-navigation a{
+		font-size: 10px;
+		padding: 6px 8px;
+	}
+	.main-navigation ul li ul{
+		width: 100%;
+		top: 90%;
+	}
+	.main-navigation ul li ul li ul{
+		left: 0;
+	}
+	.main-navigation ul li ul, .main-navigation ul li:hover ul ul{
+		display: block;
+	}
+	.menu-item-9438 .sub-menu{
+		width: 90px;
+	}
+	.menu-item-9438 .sub-menu li a{
+		font-size: 7px;
+	}
+}
+@media screen and (max-width: 767px){
+	.site-header .menu-toggle::before{
+		color: black;
+	}
+	#site-navigation{
+		background-color: rgba(0,0,0,0);
+	}
+	#menu-jeuxvideo{
+		position: fixed;
+		left: 0;
+		width: 75%;
+	}
+	.main-navigation ul{
+		display: none!important;
+	}
+	.sub-toggle .fa{
+		color: black!important;
+		position: relative;
+		top: 0;
+	}
+	.sub-toggle{
+		background-color: rgba(167,131,143,0)!important;
+		right: 0;
+		top: 30%;
+	}
+	ul>li>a>img{
+		width: 100%;
+	}
+	.main-small-navigation a{
+		font-size:25px;
+		font-family: 'Orbitron';
+		font-weight: 900;
+	}
+	.sega, .nintendo, .microsoft, .sony, .snk, .atari, .nec{
+		max-width: 100%;
+	}
+	.fa-user{
+		font-size: 25px!important;
+		color: black;
+	}
+	.main-small-navigation ul ul a{
+		padding-left:25%;
+	}
+	.main-small-navigation ul ul ul a{
+		padding-left: 20px;
+	}
+	#menu-item-10858>ul, #menu-item-10846>ul, #menu-item-10882>ul{
+		display: block;
+		margin-top: -31px;
+	}
+	#menu-item-10858>.sub-toggle .fa, #menu-item-10846>.sub-toggle .fa, #menu-item-10882>.sub-toggle .fa{
+		display: none;
+}
+}
+	/* 
+		<style media="screen">
+	html{
+		overflow: hidden
+	}
+	#primary{
+		margin-right: 0!important;
+	}
+	.owl-stage-outer{
+		border-radius: 10% / 50%;
+	}
+	#secondary{
+		position: relative;
+		float: left;
+		top: -430px;
+	}
+	@media only screen and (max-width: 768px){
+		#secondary{
+			position: relative;
+			margin-top: 430px;
+		}
+	}
+	.widget-title{
+		font-family: 'Orbitron', sans-serif;
+		border-radius: 4px;
+		box-shadow: 0px 0px 6px #289dcc;
+		background: #fff;
+		margin-top: 25px;
+		margin-bottom: 20px;
+		padding-bottom: 5px;
+		text-align: center;
+		border: solid 1px rgba(0, 0, 0, 0.1);
+		font-size:7px;
+		width: 200px;
+		padding:1px;
+		color:white;
+		background-color: #38a7bb;
+		margin-top:0px;
+	}
+	#media_image-17{
+		margin-top: 10px;
+	}
+	.widget{
+		display: none;
+	}
+	#site-navigation{
+		background-color: rgba(250,250,250,0.0);
+	}
+	#menu-jeuxvideo{
+		color: black;
+	}
+	#site-title, #menu-jeuxvideo li, .entry-title{
+		font-family: 'Orbitron', sans-serif;
+	}
+	.main-navigation ul li.current_page_item ul li a{
+		color: black;
+	}
+	.wp-custom-header{
+		top: 40px;
+		left: 30px;
+		border-bottom:none;
+	}
+
+	#site-navigation{
+		top: -35px;
+	}
+
+	#background_video{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		pointer-events: none;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+	}
+	#game_search_bar{
+		position: relative;
+		text-align: center;
+		top: 30%;
+		left: 20%;
+		max-width: 60%;
+	}
+	#q{
+		height: 45px;
+		border: 5px solid #de00ff;
+		border-radius: 100px;
+		box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 27px #ff0080, 0 0 37px #ff0080;
+	}
+	#searchBtn{
+		position: relative;
+		top: -103px;
+		float: right;
+		right: 17px;
+		border: 1px solid #de00ff;
+		text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+
+	}
+	.title_home{
+		position: relative;
+		font-family: Orbitron;
+		font-weight: 900;
+		font-size: 68px;
+		text-align: center;
+		color: white;
+		bottom: 0;
+		text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+		top: 25%;
+	}
+	#colophon{
+		position: absolute;
+		border: none;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	ul>li>a{
+		text-shadow: 2px 2px #f014a2;
+	}
+
+	.footer-widgets-area{
+		display: none;
+	}
+</style> */

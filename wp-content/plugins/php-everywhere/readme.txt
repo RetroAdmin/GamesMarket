@@ -75,6 +75,10 @@ A: Yes, but you need to check for a position parameter using an if statements in
 
 == Changelog ==
 
+= 1.4.2 - May 13, 2018 =
+
+* New: Added italien translation
+
 = 1.4.1 - December 01, 2017 =
 
 * Fix: Added Wordpress.org translation support
@@ -123,4 +127,5 @@ A: Yes, but you need to check for a position parameter using an if statements in
 
 English and German : [Alexander Fuchs](https://www.alexander-fuchs.net)
 Portuguese : [Luis Reis](http://inforarte.com/)
-Serbian : [Borisa Djuraskovic](http://www.webhostinghub.com)
+Serbian : [Borisa Djuraskovic](http://www.webhostinghub.com)
+Italian : Andrea Rosenthal Manetti

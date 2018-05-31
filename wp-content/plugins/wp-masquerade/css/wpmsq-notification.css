@@ -1,0 +1,22 @@
+.wpmsq-notification {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	position: fixed;
+	bottom: 0;
+	color: white;
+	width: 100%;
+	text-align: center;
+	border-top: solid rgb(192, 94, 94) 1px;
+	z-index: 9999;
+	padding: 3px 0;
+	background: rgb(167, 62, 59);
+	background: repeating-linear-gradient( 45deg, rgba(167, 62, 59, 1), rgba(147, 49, 46, 1) 10px, rgba(167, 62, 59, 1) 10px, rgba(173, 72, 69, 1) 20px );
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.43);
+}
+.wpmsq-notification a {
+	font-weight: bold;
+	color: white !important;
+	text-decoration: none;
+}
+.wpmsq-notification a:hover {
+	text-decoration: underline;
+}
