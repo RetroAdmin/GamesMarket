@@ -124,8 +124,7 @@
 			overflow-y: hidden;
 		}
 		.section_search{
-			margin-top: -215%;
-			margin-left: -3%;
+			margin-top: -110%;
 		}
 		.title_home{
 			font-size: 40px;
@@ -140,10 +139,6 @@
 		}
 		iframe{
 			display: none;
-		}
-		#colophon{
-			position: absolute;
-			margin-top: -140%;
 		}
 	}
 </style>
