@@ -12,7 +12,7 @@
   // Get Data Game
     global $wpdb;
     $console = $wpdb->get_results("SELECT SLUG, IMAGE, CONSTRUCTEUR, LOGO FROM Master_DB_Consoles WHERE slug='".$slug."'");
-    $games = $wpdb->get_results("SELECT G.NOM, G.IMAGE, G.GENRE, G.SLUG, G.REGION FROM Master_DB_Games G, Master_DB_Consoles C WHERE C.slug='".$slug."' AND C.ID = G.CONSOLE");
+    $games = $wpdb->get_results("SELECT G.NOM, G.IMAGE, G.GENRE, G.SLUG, G.REGION FROM Master_DB_Games G, Master_DB_Consoles C WHERE C.slug='".$slug."' AND C.ID = G.CONSOLE ORDER BY G.NOM");
     $constructeur = $wpdb->get_results("SELECT SLUG FROM Master_DB_Constructeurs WHERE ID='".$console[0]->CONSTRUCTEUR."'");
 
     // echo '<pre>';
@@ -36,6 +36,7 @@
     		<th>Photo</th>
     		<th>Type</th>
         <th>Nom</th>
+        <th>Region</th>
         <th>Genre</th>
         <th>Disponibe</th>
         <th>A partir de</th>
@@ -46,6 +47,7 @@
             echo '<td>'.do_shortcode('[icon name="camera-retro" class="" unprefixed_class=""]').'</td>';
             echo '<td>Jeu</td>';
             echo '<td><a href="'.get_site_url().'/'.$constructeur[0]->SLUG.'/'.$console[0]->SLUG.'/'.$value->REGION.'/'.$value->SLUG.'" title="'.$value->NOM.'">'.$value->NOM.'</a></td>';
+            echo '<td>'.$value->REGION.'</td>';
             echo '<td>'.$value->GENRE.'</td>';
             echo '<td>-</td>';
             echo '<td>-</td>';
