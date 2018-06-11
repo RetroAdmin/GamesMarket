@@ -47,7 +47,15 @@
             echo '<td>'.do_shortcode('[icon name="camera-retro" class="" unprefixed_class=""]').'</td>';
             echo '<td>Jeu</td>';
             echo '<td><a href="'.get_site_url().'/'.$constructeur[0]->SLUG.'/'.$console[0]->SLUG.'/'.$value->REGION.'/'.$value->SLUG.'" title="'.$value->NOM.'">'.$value->NOM.'</a></td>';
-            echo '<td>'.$value->REGION.'</td>';
+            if ($value->REGION == 'JAP'){
+              echo '<td><img src="/img/flags/japan_flag.png" alt="japan_flag" width="20px" style="margin-bottom:0;"/></td>';
+            }
+            elseif ($value->REGION == 'PAL') {
+              echo '<td><img src="/img/flags/eu_flag.png" alt="eu_flag" width="20px" style="margin-bottom:0;"/></td>';
+            }
+            elseif ($value->REGION == 'US') {
+              echo '<td><img src="/img/flags/us_flag.png" alt="eu_flag" width="20px" style="margin-bottom:0;"/></td>';
+            };
             echo '<td>'.$value->GENRE.'</td>';
             echo '<td>-</td>';
             echo '<td>-</td>';
