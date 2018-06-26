@@ -13,8 +13,9 @@
     global $wpdb;
     $console = $wpdb->get_results("SELECT SLUG, IMAGE, CONSTRUCTEUR, LOGO FROM Master_DB_Consoles WHERE slug='".$slug."'");
     $games = $wpdb->get_results("SELECT G.NOM, G.IMAGE, G.GENRE, G.SLUG, G.REGION FROM Master_DB_Games G, Master_DB_Consoles C WHERE C.slug='".$slug."' AND C.ID = G.CONSOLE ORDER BY G.NOM");
+    $packs = $wpdb->get_results("SELECT P.NOM, P.IMAGE, P.SLUG, P.REGION FROM Master_DB_Packs P, Master_DB_Consoles C WHERE C.slug='".$slug."' AND C.ID = P.CONSOLE ORDER BY P.NOM");
     $constructeur = $wpdb->get_results("SELECT SLUG FROM Master_DB_Constructeurs WHERE ID='".$console[0]->CONSTRUCTEUR."'");
-
+    $results = array_merge($games, $packs);
     // echo '<pre>';
     // // var_dump($slug);
     // // var_dump($console);
@@ -42,7 +43,7 @@
         <th>A partir de</th>
     	</tr>
       <?php
-        foreach ($games as $key => $value) {
+        foreach ($results as $key => $value) {
           echo '<tr>';
             echo '<td>'.do_shortcode('[icon name="camera-retro" class="" unprefixed_class=""]').'</td>';
             echo '<td>Jeu</td>';
@@ -56,7 +57,10 @@
             elseif ($value->REGION == 'US') {
               echo '<td><img src="/img/flags/us_flag.png" alt="eu_flag" width="20px" style="margin-bottom:0;"/></td>';
             };
-            echo '<td>'.$value->GENRE.'</td>';
+            if (isset($value->GENRE)){
+            echo '<td>'.$value->GENRE.'</td>';}
+            else{
+            	echo '<td>-</td>';};
             echo '<td>-</td>';
             echo '<td>-</td>';
           echo '</tr>';
