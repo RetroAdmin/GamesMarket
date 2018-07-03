@@ -8,13 +8,27 @@ Version: 0.1.0
 */
 
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
+@font-face {
+    font-family: 'backto1982regular';
+    src: url('fonts/backto1982-webfont.eot');
+    src: url('fonts/backto1982-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/backto1982-webfont.woff2') format('woff2'),
+         url('fonts/backto1982-webfont.woff') format('woff'),
+         url('fonts/backto1982-webfont.ttf') format('truetype'),
+         url('fonts/backto1982-webfont.svg#back_to_1982regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 
 	html, body{
 	margin: 0;
 }
 @media screen and (max-width: 3250px){
+	#main{
+		min-height: 75vh;
+	}
 #site-navigation {
 	position: relative;
 	background-color: rgba(87,210,255,0.6);
